@@ -29,7 +29,8 @@
 					"dataset": {
 						"referenceName": "generic_adls_ds",
 						"type": "DatasetReference"
-					}
+					},
+					"firstRowOnly": false
 				}
 			},
 			{
@@ -101,7 +102,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"csvFileName": {
-											"value": "@item()",
+											"value": "@item().fileName",
 											"type": "Expression"
 										}
 									}
@@ -113,7 +114,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"fileName": {
-											"value": "@item()",
+											"value": "@item().fileName",
 											"type": "Expression"
 										}
 									}
