@@ -1,0 +1,10 @@
+{
+	"name": "ADLSg2_LS",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://clspcapstone.dfs.core.windows.net/"
+		}
+	}
+}
