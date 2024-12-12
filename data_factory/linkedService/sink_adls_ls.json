@@ -1,0 +1,11 @@
+{
+	"name": "sink_adls_ls",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"serviceEndpoint": "https://clspcapstone.blob.core.windows.net/",
+			"accountKind": "StorageV2"
+		}
+	}
+}
