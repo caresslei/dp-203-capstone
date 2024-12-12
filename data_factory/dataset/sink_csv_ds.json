@@ -19,7 +19,10 @@
 					"value": "@dataset().fileName",
 					"type": "Expression"
 				},
-				"folderPath": "@concat( \t'Rebrickable', \t'/', \tdataset().fileName, \t'/Year=', \tformatDateTime(utcnow(),'yyyy'),\t \t'/Month=', \tformatDateTime(utcnow(),'MM'), \t'/Day=', \tformatDateTime(utcnow(),'dd'), )",
+				"folderPath": {
+					"value": "@concat( \t'Rebrickable', \t'/', \tdataset().fileName, \t'/Year=', \tformatDateTime(utcnow(),'yyyy'),\t \t'/Month=', \tformatDateTime(utcnow(),'MM'), \t'/Day=', \tformatDateTime(utcnow(),'dd') )",
+					"type": "Expression"
+				},
 				"container": "raw"
 			},
 			"columnDelimiter": ",",
