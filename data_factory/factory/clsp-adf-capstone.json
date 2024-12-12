@@ -1,0 +1,9 @@
+{
+	"name": "clsp-adf-capstone",
+	"location": "southeastasia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "780e201b-00c1-439b-8244-94f036ac597c",
+		"tenantId": "e0793d39-0939-496d-b129-198edd916feb"
+	}
+}
