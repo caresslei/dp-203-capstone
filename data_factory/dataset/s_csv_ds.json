@@ -5,6 +5,11 @@
 			"referenceName": "ADLSg2_LS",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"csvFileName": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
