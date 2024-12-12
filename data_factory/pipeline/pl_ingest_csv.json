@@ -47,7 +47,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('Get list of files to be processed').output",
+						"value": "@activity('Get list of files to be processed').output.value",
 						"type": "Expression"
 					},
 					"activities": [
@@ -102,7 +102,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"csvFileName": {
-											"value": "@item().fileName",
+											"value": "@item().fileNames",
 											"type": "Expression"
 										}
 									}
@@ -114,7 +114,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"fileName": {
-											"value": "@item().fileName",
+											"value": "@item().fileNames",
 											"type": "Expression"
 										}
 									}
