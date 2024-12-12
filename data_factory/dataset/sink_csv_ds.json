@@ -1,0 +1,32 @@
+{
+	"name": "sink_csv_ds",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "sink_adls_ls",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"fileName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@dataset().fileName",
+					"type": "Expression"
+				},
+				"folderPath": "@concat( \t'Rebrickable', \t'/', \tdataset().fileName, \t'/Year=', \tformatDateTime(utcnow(),'yyyy'),\t \t'/Month=', \tformatDateTime(utcnow(),'MM'), \t'/Day=', \tformatDateTime(utcnow(),'dd'), )",
+				"container": "raw"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
