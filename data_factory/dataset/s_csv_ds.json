@@ -26,23 +26,6 @@
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
-		"schema": [
-			{
-				"name": "id",
-				"type": "String"
-			},
-			{
-				"name": "name",
-				"type": "String"
-			},
-			{
-				"name": "rgb",
-				"type": "String"
-			},
-			{
-				"name": "is_trans",
-				"type": "String"
-			}
-		]
+		"schema": []
 	}
 }
